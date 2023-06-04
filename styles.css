@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: hsl(216, 12%, 8%);
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    box-sizing: border-box;
+    width: 400px;
+    height: 410px;
+    border-radius: 25px;
+    background-image: radial-gradient(ellipse at top, hsl(213, 19%, 18%), hsl(213, 29%, 12%));
+    padding: 25px;
+}
+main .start{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+main .end{
+    display: none;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.star-block{
+    background: hsl(213, 19%, 18%);
+    width: 45px;
+    height: 45px;
+    border-radius: 25px;
+    display: grid;
+    place-items: center;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.did-do-title{
+    color:white;
+    font-weight: 700;
+    font-family: 'Overpass', sans-serif;
+}
+.inform-us{
+    color: hsl(217, 12%, 63%);
+    line-height: 1.5;
+    font-weight: 400;
+    font-family: 'Overpass', sans-serif;
+}
+.rate-select ul{
+    list-style-type: none;
+    color:hsl(217, 12%, 63%);
+    display:flex;
+    gap:32px
+}
+ul li {
+    background: hsl(213, 19%, 18%);
+    width: 45px;
+    height: 45px;
+    border-radius: 25px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+ul li:hover {
+    background: hsl(25, 97%, 53%);
+    color:white;
+}
+button{
+    background: hsl(25, 97%, 53%);
+    border: none;
+    color:white;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: larger;
+    text-transform: uppercase;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover{
+    color:hsl(25, 97%, 53%);
+    background: white;
+}
+.thank-you-image{
+    display: flex;
+    justify-content: center;
+}
+.numberSelected{
+    display: flex;
+    justify-content: center;
+}
+.choosenNumber{
+    background: hsl(213, 19%, 18%);
+    width: 190px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color:hsl(25, 97%, 53%);
+    border-radius: 10px;
+    font-size: 16px;
+}
+.thank-title{
+    color:white;
+    text-align: center;
+    font-family: 'Overpass', sans-serif;
+}
+.thank-desc{
+    color: hsl(217, 12%, 63%);
+    line-height: 1.5;
+    font-weight: 400;
+    font-family: 'Overpass', sans-serif;
+    text-align: center;
+}
